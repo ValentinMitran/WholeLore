@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "OldStamper";
+  src: url(./../../fonts/OldStamper.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.lp {
+  background: linear-gradient(rgba(10, 10, 10, 0.6), rgba(0, 0, 0, 0.9)),
+    repeating-linear-gradient(
+      0,
+      transparent,
+      transparent 2px,
+      black 3px,
+      black 3px
+    ),
+    url("https://wallpaperaccess.com/full/95233.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    color: rgb(94, 28, 28);
+    margin-bottom: 10px;
+    font-family: "OldStamper", Helvetica, Arial, sans-serif;
+    font-size: 60px;
+    @media (max-width: 767px) {
+      font-size: 40px;
+    }
+  }
+  span {
+    color: rgb(129, 45, 45);
+  }
+  button {
+    width: 150px;
+    height: 30px;
+    margin-top: 10px;
+    background-color: rgb(31, 9, 9);
+    color: rgb(129, 45, 45);
+    border: none;
+  }
+}
